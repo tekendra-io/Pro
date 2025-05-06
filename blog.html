@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - GlobeVista</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-blue-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-700 to-indigo-700 text-white p-4 flex justify-between shadow-lg sticky top-0 z-50">
+    <h1 class="text-3xl font-bold">Frontend</h1>
+    <ul class="flex space-x-6 text-lg">
+      <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+      <li><a href="destinations.html" class="hover:text-yellow-300">Destinations</a></li>
+      <li><a href="blog.html" class="hover:text-yellow-300">Blog</a></li>
+      <li><a href="gallery.html" class="hover:text-yellow-300">Gallery</a></li>
+      <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+      <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Blog Section -->
+  <section class="py-16 px-8">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Travel Stories & Guides</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Blog Card -->
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition">
+        <img src="https://source.unsplash.com/400x250/?travel,journal" class="w-full h-48 object-cover rounded-t-lg" alt="Travel Journal">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Backpacking Through the Alps</h3>
+          <p class="text-gray-600">Discover the majestic trails, hidden villages, and unforgettable memories from a solo hike across Europe’s most iconic mountain range.</p>
+        </div>
+      </div>
+
+      <!-- Blog Card -->
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition">
+        <img src="https://source.unsplash.com/400x250/?cultural,festival" class="w-full h-48 object-cover rounded-t-lg" alt="Festival">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Colors of Holi in India</h3>
+          <p class="text-gray-600">Experience the vibrant festival of colors through the lens of a traveler immersed in India’s rich cultural traditions.</p>
+        </div>
+      </div>
+
+      <!-- Blog Card -->
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition">
+        <img src="https://source.unsplash.com/400x250/?desert,camels" class="w-full h-48 object-cover rounded-t-lg" alt="Desert">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Sahara: Nights Under the Stars</h3>
+          <p class="text-gray-600">A magical journey across the golden sands of Morocco. Sleep under the stars and embrace the nomadic lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-indigo-700 to-blue-700 text-white p-8 text-center mt-16">
+    <p class="text-lg">&copy; 2025 Frontend. All rights reserved.</p>
+    <div class="mt-4 space-x-6 text-xl">
+      <a href="#" class="hover:text-yellow-300">Facebook</a>
+      <a href="#" class="hover:text-yellow-300">Instagram</a>
+      <a href="#" class="hover:text-yellow-300">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>
